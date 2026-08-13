@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2withvalidation</title>
+</head>
+<body>
+    <h2>Form Validation</h2>
+    <form  >
+        <label for="name">Name:</label>
+        <input type="text"name="name" id="fname" ><br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="fpassword" required><br><br>
+        <label for="retypepassword">Retype Password:</label>
+        <input type="password" name="retypepassword" id="fretypepassword" required><br><br>
+        <button type="button" id="submit" onClick="  ValidateForm()">Submit</button>
+        <p id="msg"></p>
+    </form>
+    <script>
+        function ValidateForm(){
+            const fname = document.getElementById("fname").value.trim();
+        const fpassword = document.getElementById("fpassword").value;
+        const fretypepassword = document.getElementById("fretypepassword").value;
+        const msg = document.getElementById("msg");
+
+        if(fname==""){
+            msg.innerHTML="Name is required";
+            return false;
+        }
+        if(fpassword!=fretypepassword){
+            msg.innerHTML="Password and Retype Password should be same";
+            return false;
+        }
+       
+        msg.innerHTML="Form submitted successfully";
+        return false;
+        }    
+    </script>
+</body>
+</html>
