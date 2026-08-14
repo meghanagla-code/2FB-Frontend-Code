@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset title="Students Form">
+            <label>Gender:</label>
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Others<br><br>
+        <label>D.O.B:</label>
+        <input type="date"><br><br>
+        <label>Skills:</label>
+        <input type="checkbox">HTML
+         <input type="checkbox">CSS
+          <input type="checkbox">Java
+           <input type="checkbox">DBMS<br><br>
+           <label>Skills:</label>
+           <select>
+           <optgroup label="Frontend">
+            <option selected>HTML</option>
+            <option>CSS</option>
+            <option>JS</option>
+           </optgroup>
+           <optgroup label="Backend">
+            <option selected>Java</option>
+            <option>Spring</option>
+           </optgroup>
+           </select><br><br>
+           <label>Resume:</label>
+           <input type="file"><br><br>
+           <label>Comment</label>
+           <textarea required rows="10" cols="7"></textarea><br><br>
+           <label>Mobile number:</label>
+           <input type="tel" placeholder="+91 [0-9]{9}" pattern="\+91 [0-9]{9}"><br><br>
+           <input type="submit">
+           <input type="reset">
+           <input type="button" value="LogIn">
+           <button>SignUp</button>
+        </fieldset>
+    </form>
+</body>
+</html>
