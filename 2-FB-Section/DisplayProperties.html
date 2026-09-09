@@ -47,6 +47,42 @@
             color: black;
             text-align:center;
         }
+        .div-flex{
+            background-color: rgb(18, 182, 211);
+            border: 2px solid blue;
+            padding: 20px;
+            margin: 10px;
+            display: flex;
+            gap: 30px;
+            /* flex-wrap: wrap; */
+            flex-direction: row;
+            text-align: center;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .flex{
+            border: 2px solid red;
+            background-color: yellow;
+            width: 100px;
+            height: 40px;
+        }
+        .grid-display{
+            background-color: rgb(18, 182, 211);
+            border: 2px solid blue;
+            padding: 20px;
+            margin: 10px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+
+        }
+        .grid{
+            border: 2px solid red;
+            background-color: yellow;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -67,6 +103,36 @@
         <h2 class="inline-block">Hii</h2>
         <h2 class="inline-block">Helloo</h2>
         <h2 class="inline-block">Welcome</h2>
+    </div>
+    <h2>Flex Display</h2>
+    <div class="div-flex">
+        <h2 class="flex">Hii</h2>
+        <h2 class="flex">Hello</h2>
+        <h2 class="flex">Welcome</h2>
+        <h2 class="flex">Hii</h2>
+        <h2 class="flex">Hello</h2>
+        <h2 class="flex">Welcome</h2>
+        <h2 class="flex">Hii</h2>
+        <h2 class="flex">Hello</h2>
+        <h2 class="flex">Welcome</h2>
+        <h2 class="flex">Hii</h2>
+        <h2 class="flex">Hello</h2>
+        <h2 class="flex">Welcome</h2>
+    </div>
+    <h1>Grid Display</h1>
+    <div class="grid-display">
+        <h2 class="grid">Hii</h2>
+        <h2 class="grid">Hello</h2>
+        <h2 class="grid">Welcome</h2>
+        <h2 class="grid">Hii</h2>
+        <h2 class="grid">Hello</h2>
+        <h2 class="grid">Welcome</h2>
+        <h2 class="grid">Hii</h2>
+        <h2 class="grid">Hello</h2>
+        <h2 class="grid">Welcome</h2>
+        <h2 class="grid">Hii</h2>
+        <h2 class="grid">Hello</h2>
+        <h2 class="grid">Welcome</h2>
     </div>
 </body>
 </html>
